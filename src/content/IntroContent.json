@@ -1,0 +1,15 @@
+{
+  "title": "Jualan atau beli ini itu satu aplikasi saja",
+  "text": "Buka toko sembako, toko kelontong, barbershop, salon bisa!",
+  "button": [
+    {
+      "title": "Produk",
+      "to": "/products"
+    },
+    {
+      "title": "Toko",
+      "color": "#fff",
+      "to": "/shops"
+    }
+  ]
+}

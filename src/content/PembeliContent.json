@@ -1,0 +1,20 @@
+{
+  "title": "Pembeli",
+  "section": [
+    {
+      "title": "Asli Lokal",
+      "content": "Coba dan lihat produk - produk lokal sekitar kamu yang belum pernah kamu lihat sebelumnya",
+      "icon": "mitra1.svg"
+    },
+    {
+      "title": "Sesuai Gambar",
+      "content": "Produk yang datang dijamin 100% sesuai dengan yang ada di gambar.",
+      "icon": "pembeli2.svg"
+    },
+    {
+      "title": "Transaksi Aman",
+      "content": "Transaksi dijamin kemanannya dikarenakan dikelolah dan diverifikasi langsung oleh kami.",
+      "icon": "mitra3.svg"
+    }
+  ]
+}

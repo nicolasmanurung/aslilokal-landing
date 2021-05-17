@@ -1,0 +1,20 @@
+{
+  "title": "Mitra",
+  "section": [
+    {
+      "title": "Manajemen Produk",
+      "content": "Kamu bebas menambahkan produk apapun itu.",
+      "icon": "mitra1.svg"
+    },
+    {
+      "title": "Analitik Penjualan",
+      "content": "Penjualan kamu akan dicatat secara otomatis.",
+      "icon": "mitra2.svg"
+    },
+    {
+      "title": "Transaksi Aman",
+      "content": "Transaksi dijamin kemanannya dikarenakan dikelolah dan diverifikasi langsung oleh kami.",
+      "icon": "mitra3.svg"
+    }
+  ]
+}
