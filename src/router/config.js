@@ -8,6 +8,16 @@ const routes = [
     path: ["/products"],
     exact: false,
     component: "ProductPage",
+  },
+  {
+    path: ["/shops"],
+    exact: false,
+    component: "ShopPage",
+  },
+  {
+    path: ["/shops/detail/"],
+    exact: false,
+    component: "ShopPage",
   }
 ];
 
