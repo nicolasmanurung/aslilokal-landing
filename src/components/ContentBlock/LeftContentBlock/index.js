@@ -9,6 +9,14 @@ import * as S from "./styles";
 
 const Button = lazy(() => import("../../../common/Button"));
 
+const handleClickBuyer = () => {
+  window.open("https://play.google.com/store/apps/details?id=com.aslilokal.buyer");
+};
+
+const handleClickSeller = () => {
+  window.open("https://play.google.com/store/apps/details?id=com.aslilokal.mitra");
+};
+
 const LeftContentBlock = ({ icon, title, content, section, t, id, tipe }) => {
   return (
     <S.LeftContentBlock>
@@ -59,8 +67,8 @@ const LeftContentBlock = ({ icon, title, content, section, t, id, tipe }) => {
               </S.ServiceWrapper>
               {tipe === "pembeli" ? (
                 <S.ButtonWrapper>
-                  <Button color="#FF7676">Pembeli</Button>
-                  <Button color="#FFFFFF" textColor="#FF7676">
+                  <Button onClick={handleClickBuyer} color="#FF7676">Pembeli</Button>
+                  <Button onClick={handleClickSeller} color="#FFFFFF" textColor="#FF7676">
                     Mitra
                   </Button>
                 </S.ButtonWrapper>

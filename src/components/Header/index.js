@@ -35,7 +35,7 @@ const Header = ({ t }) => {
           <S.Span>{t("Home")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <S.Span>{t("Hubungi Kami")}</S.Span>
+          <S.Span><a href="mailto:bantuan@aslilokal.com">{t("Hubungi Kami")}</a></S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall style={{ width: "180px" }}>
           {" "}
