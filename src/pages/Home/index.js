@@ -3,7 +3,7 @@ import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import MitraContent from "../../content/MitraContent.json";
-import PembeliContent from '../../content/PembeliContent.json'
+import PembeliContent from "../../content/PembeliContent.json";
 import ProductContent from "../../content/ProductContent.json";
 
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -51,6 +51,7 @@ const Home = () => {
         content={ProductContent.text}
         icon="customersection.svg"
         id="product"
+        tipe="pembeli"
       />
     </Container>
   );

@@ -1,12 +1,15 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
+import { lazy } from "react";
 import Slide from "react-reveal/Slide";
 
 import SvgIcon from "../../../common/SvgIcon";
 
 import * as S from "./styles";
 
-const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
+const Button = lazy(() => import("../../../common/Button"));
+
+const LeftContentBlock = ({ icon, title, content, section, t, id, tipe }) => {
   return (
     <S.LeftContentBlock>
       <Row type="flex" justify="space-between" align="middle" id={id}>
@@ -32,7 +35,21 @@ const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
                     section.map((item, id) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
+                          {item.type === "disableClick" ? (
+                            <SvgIcon
+                              src={item.icon}
+                              width="70px"
+                              height="70px"
+                            />
+                          ) : (
+                            <a href="https://play.google.com/store/apps/details?id=com.aslilokal.mitra">
+                              <SvgIcon
+                                src={item.icon}
+                                width="70px"
+                                height="70px"
+                              />
+                            </a>
+                          )}
                           <S.MinTitle>{t(item.title)}</S.MinTitle>
                           <S.MinPara>{t(item.content)}</S.MinPara>
                         </Col>
@@ -40,6 +57,16 @@ const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
                     })}
                 </Row>
               </S.ServiceWrapper>
+              {tipe === "pembeli" ? (
+                <S.ButtonWrapper>
+                  <Button color="#FF7676">Pembeli</Button>
+                  <Button color="#FFFFFF" textColor="#FF7676">
+                    Mitra
+                  </Button>
+                </S.ButtonWrapper>
+              ) : (
+                ""
+              )}
             </S.ContentWrapper>
           </Slide>
         </Col>

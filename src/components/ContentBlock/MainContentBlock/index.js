@@ -19,7 +19,7 @@ const MainBlock = ({ title, content, button, icon, t, id, to }) => {
 
   return (
     <S.RightBlockContainer>
-      <Row type='flex' justify='space-between' align='middle' id={id}>
+      <Row type="flex" justify="space-between" align="middle" id={id}>
         <Col lg={11} md={11} sm={11} xs={24}>
           <Slide left>
             <S.ContentWrapper>
@@ -33,8 +33,10 @@ const MainBlock = ({ title, content, button, icon, t, id, to }) => {
                       <Button
                         key={id}
                         color={item.color}
-                        width='true'
-                        onClick={() => Move(item.to)}>
+                        width="true"
+                        textColor={item.textColor}
+                        onClick={() => Move(item.to)}
+                      >
                         {t(item.title)}
                       </Button>
                     );
@@ -47,9 +49,9 @@ const MainBlock = ({ title, content, button, icon, t, id, to }) => {
           <Slide right>
             <SvgIcon
               src={icon}
-              className='about-block-image'
-              width='100%'
-              height='100%'
+              className="about-block-image"
+              width="100%"
+              height="100%"
             />
           </Slide>
         </Col>

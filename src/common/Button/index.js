@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
-const Button = ({ color, width, children, onClick }) => (
-  <S.Button color={color} width={width} onClick={onClick}>
+const Button = ({ color, width, children, onClick, textColor }) => (
+  <S.Button color={color} textColor={textColor} width={width} onClick={onClick}>
     {children}
   </S.Button>
 );

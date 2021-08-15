@@ -4,17 +4,25 @@
     {
       "title": "Manajemen Produk",
       "content": "Kamu bebas menambahkan produk apapun itu.",
-      "icon": "mitra1.svg"
+      "icon": "mitra1.svg",
+      "type": "disableClick"
     },
     {
       "title": "Analitik Penjualan",
       "content": "Penjualan kamu akan dicatat secara otomatis.",
-      "icon": "mitra2.svg"
+      "icon": "mitra2.svg",
+      "type": "disableClick"
     },
     {
       "title": "Transaksi Aman",
       "content": "Transaksi dijamin kemanannya dikarenakan dikelolah dan diverifikasi langsung oleh kami.",
-      "icon": "mitra3.svg"
+      "icon": "mitra3.svg",
+      "type": "disableClick"
+    },
+    {
+      "title": "Jadilah Mitra",
+      "icon": "googlePlay.svg",
+      "type": "click"
     }
   ]
 }

@@ -15,10 +15,10 @@ const routes = [
     component: "ShopPage",
   },
   {
-    path: ["/shops/detail/"],
+    path: ["/detailShop/:id"],
     exact: false,
-    component: "ShopPage",
-  }
+    component: "ShopDetailPage",
+  },
 ];
 
 export default routes;

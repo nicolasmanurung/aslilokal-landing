@@ -6,7 +6,7 @@ import SvgIcon from "../../../common/SvgIcon";
 
 import * as S from "./styles";
 
-const RightBlock = ({ title, content,section, button, icon, t, id }) => {
+const RightBlock = ({ title, content, section, button, icon, t, id }) => {
   // const scrollTo = (id) => {
   //   const element = document.getElementById(id);
   //   element.scrollIntoView({
@@ -28,7 +28,21 @@ const RightBlock = ({ title, content,section, button, icon, t, id }) => {
                     section.map((item, id) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
+                          {item.type === "disableClick" ? (
+                            <SvgIcon
+                              src={item.icon}
+                              width="60px"
+                              height="60px"
+                            />
+                          ) : (
+                            <a href="https://play.google.com/store/apps/details?id=com.aslilokal.buyer">
+                              <SvgIcon
+                                src={item.icon}
+                                width="60px"
+                                height="60px"
+                              />
+                            </a>
+                          )}
                           <S.MinTitle>{t(item.title)}</S.MinTitle>
                           <S.MinPara>{t(item.content)}</S.MinPara>
                         </Col>

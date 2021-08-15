@@ -2,7 +2,7 @@ import { useState, Fragment, lazy } from "react";
 import { Row, Col, Drawer } from "antd";
 import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
-
+import { Link } from "react-router-dom";
 import * as S from "./styles";
 
 const SvgIcon = lazy(() => import("../../common/SvgIcon"));
@@ -32,21 +32,18 @@ const Header = ({ t }) => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <S.Span>{t("About")}</S.Span>
+          <S.Span>{t("Home")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <S.Span>{t("Mission")}</S.Span>
+          <S.Span>{t("Hubungi Kami")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <S.Span>{t("Product")}</S.Span>
-        </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <S.Span>
-            <Button>{t("Contact")}</Button>
-          </S.Span>
+        <S.CustomNavLinkSmall style={{ width: "180px" }}>
+          {" "}
+          <a href=" https://play.google.com/store/apps/details?id=com.aslilokal.buyer">
+            <S.Span>
+              <Button>{t("Unduh Sekarang")}</Button>
+            </S.Span>
+          </a>
         </S.CustomNavLinkSmall>
       </Fragment>
     );

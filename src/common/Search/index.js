@@ -4,7 +4,7 @@ import { FormControl, Button, InputGroup } from "react-bootstrap";
 const Search = ({ onSubmit, queryText }) => {
   return (
     <div>
-      <InputGroup className='mb-3'>
+      <InputGroup className='mb-5 mt-5'>
         <FormControl
           placeholder='Cari Disini'
           aria-label='Cari Disini'

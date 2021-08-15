@@ -4,17 +4,25 @@
     {
       "title": "Asli Lokal",
       "content": "Coba dan lihat produk - produk lokal sekitar kamu yang belum pernah kamu lihat sebelumnya",
-      "icon": "mitra1.svg"
+      "icon": "mitra1.svg",
+      "type": "disableClick"
     },
     {
       "title": "Sesuai Gambar",
       "content": "Produk yang datang dijamin 100% sesuai dengan yang ada di gambar.",
-      "icon": "pembeli2.svg"
+      "icon": "pembeli2.svg",
+      "type": "disableClick"
     },
     {
       "title": "Transaksi Aman",
       "content": "Transaksi dijamin kemanannya dikarenakan dikelolah dan diverifikasi langsung oleh kami.",
-      "icon": "mitra3.svg"
+      "icon": "mitra3.svg",
+      "type": "disableClick"
+    },
+    {
+      "title": "Coba Sekarang",
+      "icon": "googlePlay.svg",
+      "type": "click"
     }
   ]
 }

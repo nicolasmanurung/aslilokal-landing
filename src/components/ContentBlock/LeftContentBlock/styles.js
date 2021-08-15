@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Col } from 'antd';
+import styled from "styled-components";
+import { Col } from "antd";
 
 export const LeftContentBlock = styled.section`
   position: relative;
@@ -37,6 +37,11 @@ export const MinTitle = styled.h6`
 
 export const MinPara = styled.p`
   font-size: 0.75rem;
+`;
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
 `;
 
 export const ServiceItem = styled(Col)`

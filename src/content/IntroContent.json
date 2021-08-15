@@ -9,6 +9,7 @@
     {
       "title": "Toko",
       "color": "#fff",
+      "textColor": "#FF7676",
       "to": "/shops"
     }
   ]
