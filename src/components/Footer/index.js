@@ -90,6 +90,18 @@ const Footer = ({ t }) => {
                   }}>
                   bantuan@aslilokal.com
                 </a>
+                <a
+                  href='https://wa.me/+62895612385237'
+                  target='_blank'
+                  style={{
+                    fontSize: "16px",
+                    color: `rgba(2, 7, 62, 0.8)`,
+                    textAlign: "left",
+                    cursor: "pointer",
+                    display: "block",
+                  }}>
+                  Whatsapp Kami
+                </a>
               </Col>
             </Row>
           </Container>
